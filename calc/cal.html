@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <div class="heading">
+        Calculator
+    </div>
+    <div class="display">
+        <form action="">
+            <input class="input input1" type="text" placeholder="Enter first input">
+            <input class="input input2" type="text" placeholder="Enter Second input">
+            <button class="submit" type="reset" onclick="sendData()">Reset</button>
+        </form>
+    </div>
+    <div class="row">
+        <button class="button" onclick="add()">+</button>
+        <button class="button" onclick="sub()">-</button>
+        <button class="button" onclick="mul()">*</button>
+        <button class="button" onclick="div()">/</button>
+        <!-- <button class="reset">Reset</button> -->
+    </div>
+    <div>
+        <p class="result">Result<span class="wait">....</span></p>
+    </div>
+    <script src="cal.js"></script>
+</body>
+
+</html>
